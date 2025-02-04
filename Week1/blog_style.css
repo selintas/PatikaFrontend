@@ -8,9 +8,15 @@ h1{
 div>ul{ 
     list-style-type: "🖤";
 }
-/* pseduo(sözde) class selectors */
+/* pseduo(sözde) class selectors (deneme)*/
 ol:nth-child(odd){
     background-color: #f4f4f4;
     padding: 1rem;
     margin: 1rem;
+}
+body {
+    background-image: url('./img/backround1.png');
+    background-size: cover; /* Resmin boyutunu ekranın tamamına yayar */
+    background-position: center center; /* Resmin ortalanmasını sağlar */
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
 }
