@@ -12,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Stili */
@@ -20,17 +22,20 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
+    padding: 10px 0;
 }
 
 /* Navigasyon Stili */
 nav ul {
     list-style: none;
     padding: 0;
+    list-style-type: none;
 }
 
 nav ul li {
     display: inline;
     margin: 0 10px;
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -55,6 +60,37 @@ article {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Konteyneri (index.html için özel düzenleme) */
+.articles-container {
+    display: flex;
+    flex-direction: row; /* Articles will be displayed side by side */
+    flex-wrap: wrap; /* Ensure articles wrap to the next line if they don't fit */
+    justify-content: space-between; /* Distribute space between articles */
+    gap: 20px; /* Space between articles */
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-wrapper {
+    display: flex;
+    flex: 1;
+    gap: 20px; /* Space between the articles */
+}
+
+.article-wrapper article {
+    flex: 1 1 calc(50% - 20px); /* Each article takes up 1/2 of the container width minus the gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Görsel (Resim) Stili */
@@ -76,6 +112,8 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
+    padding: 10px 0;
+    position: fixed;
 }
 
 /* Link Stil (Devamını Oku) */
