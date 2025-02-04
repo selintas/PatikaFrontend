@@ -1,3 +1,4 @@
+/* Genel Stil */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,13 +9,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Header Stili */
 header {
     background-color: #333;
     color: white;
@@ -22,6 +22,7 @@ header {
     padding: 1rem;
 }
 
+/* Navigasyon Stili */
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,8 +31,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 10px;
-    
-
 }
 
 nav ul li a {
@@ -39,6 +38,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main (İçerik) Alanı Stili */
 main {
     padding: 20px;
     flex: 1;
@@ -47,6 +47,7 @@ main {
     justify-content: center;
 }
 
+/* Article (Blog Gönderisi) Stili */
 article {
     background: white;
     padding: 20px;
@@ -55,7 +56,9 @@ article {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
- img {
+
+/* Görsel (Resim) Stili */
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -63,6 +66,7 @@ article {
     border-radius: 5px;
 }
 
+/* Footer (Altbilgi) Stili */
 footer {
     background-color: #333;
     color: white;
@@ -74,7 +78,19 @@ footer {
     left: 0;
 }
 
- p>a {
+/* Link Stil (Devamını Oku) */
+p > a {
     color: rgb(1, 1, 1);
- }
-    
+    text-decoration: underline;
+}
+
+/* Başlık ve İçerik Başlıkları */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
