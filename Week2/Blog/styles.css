@@ -3,12 +3,12 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Arka Plan */
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    color: #666; /* Metin */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -18,7 +18,7 @@ body {
 
 /* Header Stili */
 header {
-    background-color: #333;
+    background-color: #333; /* Başlık ve Footer */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -104,7 +104,7 @@ img {
 
 /* Footer (Altbilgi) Stili */
 footer {
-    background-color: #333;
+    background-color: #333; /* Başlık ve Footer */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -118,7 +118,7 @@ footer {
 
 /* Link Stil (Devamını Oku) */
 p > a {
-    color: rgb(1, 1, 1);
+    color: #333; /* Başlıklar */
     text-decoration: underline;
 }
 
@@ -126,9 +126,11 @@ p > a {
 h2 {
     font-size: 24px;
     margin-bottom: 15px;
+    color: #333; /* Başlıklar */
 }
 
 h1 {
     font-size: 32px;
     margin: 0;
+    color: #333; /* Başlıklar */
 }
