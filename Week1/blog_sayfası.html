@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kişisel Blog Sayfasi</title>
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="blog_style.css">
+    <!--INTERNAL CSS-->
+    <style>
+        /* Tüm Paragraflara uygulanacak kural kümesi */
+        p {
+            text-indent: 25px;
+            text-align: justify;
+            font-size: 110%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Selin'in Kişisel Blog Sayfası</h1>
+    <!-- INLINE CSS -->
+    <h1 style="color: rgb(103, 99, 99);">Selin'in Kişisel Blog Sayfası</h1>
     <hr>
     <p>Merhaba, ben Selin. Seyahat etmeyi, teknolojiyi ve kitap okumayı çok seviyorum. Bu blog sayfasında bu konular hakkında yazılar paylaşacağım. İyi okumalar!</p>
     <ul>  
@@ -19,11 +32,13 @@
     <article>
         <h2>1. Seyahat Maceralarım</h2>
         <p>Geçen yaz Viyanaen yaz Viyana\u201ya yaptığım seyahat, tarih ve sanatla dolu unutulmaz bir deneyimdi. Schönbrunn Sarayı’nın ihtişamı, St. Stephen’s Katedrali’nin gotik zarafeti ve Kunsthistorisches Museum’da gördüğüm dünyaca ünlü eserler beni adeta zamanda yolculuğa çıkardı. Viyana’nın köklü kafelerinde Sacher turtası ve kahve keyfi yaparken şehrin zarafetini içime çektim. Klimt’in “Öpücük” tablosunu Belvedere Sarayı’nda görmek ise bu maceraya büyük bir anlam kattı. Viyana, her detayıyla hayran bırakan bir şehir.</p>
-        <ul>
-            <li>Viyana'nın tarihi sokakları</li>
-            <li>Sanat müzeleri</li>
-            <li>Lezzetli yemekler</li>
-        </ul>
+        <div>
+            <ul>
+                <li>Viyana'nın tarihi sokakları</li>
+                <li>Sanat müzeleri</li>
+                <li>Lezzetli yemekler</li>
+            </ul>
+        </div>
         <img src="./img/viyana.jpg" alt="Viyana sokakları" style="width:750px; height:422px; margin: 0 auto;">
         <p>Daha fazla bilgi için <a href="https://tr.wikipedia.org/wiki/Viyana" target="_blank">Viyana</a> hakkında okuyabilirsiniz.</p>
     </article>

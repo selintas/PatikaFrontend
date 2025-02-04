@@ -1,0 +1,16 @@
+h1{ 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+/* div hemen içindekı paragraf. */
+div>ul{ 
+    list-style-type: "🖤";
+}
+/* pseduo(sözde) class selectors */
+ol:nth-child(odd){
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+}
