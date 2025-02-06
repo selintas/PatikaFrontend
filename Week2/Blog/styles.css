@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -46,7 +46,9 @@ nav ul li a {
 /* Main (İçerik) Alanı Stili */
 main {
     background: linear-gradient(to bottom, #21212c, #ffffff);
-    padding: 20px;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
     flex: 1;
     display: flex;
     flex-direction: column;
