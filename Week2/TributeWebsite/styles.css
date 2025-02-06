@@ -1,0 +1,155 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+/* Header ve Navigasyon */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#home img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Biography Section */
+#info {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Books Section */
+#books {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#books h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#books ul {
+    list-style-type: none;
+}
+
+#books li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#books li:hover {
+    color: #ff6347;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home img {
+        max-width: 90%;
+    }
+
+    #info p {
+        font-size: 16px;
+    }
+
+    #books li {
+        font-size: 16px;
+    }
+}
