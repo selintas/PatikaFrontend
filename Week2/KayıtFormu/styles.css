@@ -6,12 +6,17 @@ body {
     padding: 0;
 }
 
-h1, p {
+h1 {
     color: #333;
+}
+p {
+    font-weight: bold;
+    color: #060606;
+    
 }
 
 form {
-    background: white;
+    background: goldenrod;
     padding: 20px;
     max-width: 400px;
     margin: 20px auto;
@@ -20,6 +25,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 label {
@@ -31,13 +37,18 @@ input, select, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 input[type="radio"], input[type="checkbox"] {
     width: auto;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
 }
 
 textarea {
@@ -57,4 +68,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #218838;
+}
+hr{ 
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
