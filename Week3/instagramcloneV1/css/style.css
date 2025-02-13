@@ -1,34 +1,9 @@
-body {
-  padding-top: 54px; /* Adjust based on the height of the navbar */
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: white;
-  height: 54px;
-}
-.navbar .logo {
-  margin-left: 192px;
-}
-navbar-nav {
-  margin-left: 5px;
-  margin-top: 2px;
-  
-}
-
-
 ::placeholder{
   text-align: center;
   font-size: 14px;
   color: gray;
   background-position: 40%;
   background-size: 6%;
-  background: url('/Week3/ınsgramclone/assets/search-solid.svg') no-repeat;
-  background-size: 16px 16px;
-  background-position: 65px center;
-  padding-left: 30px; /* Adjust padding to make space for the icon */
 }
 
 input.empty {
