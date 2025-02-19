@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Exo 2", sans-serif;
+  }
+
+  :root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #a21caf;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  section {
+    min-height: 100vh;
+    padding: 8rem 10% 2rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+  }
+
+  .navbar a:hover {
+    color: var(--main-color);
+  }
+
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-img {
+    position: relative;
+  }
+  .home-img-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    clip-path: polygon(20% 15%, 80% 15%, 100% 70%, 0 70%);
+  }
+  .home-img img {
+    width: 35vw;
+  }
+  .home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .home-content p {
+    font-size: 1.6rem;
+  }
+  .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+  }
+  .social-links a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease;
+    background-clip: text;
+    text-shadow: 0 0 1rem var(--main-color);
+    /* box-shadow: 0 0 5px var(--main-color); */
+  }
+  .home-span {
+    color: var(--bg-color);
+    position: relative;
+  }
+  .frontend-span,
+    .backend-span,
+    .fullstack-span {
+      position: absolute;
+      color: transparent;
+      width: 0;
+      height: 100%;
+      background: var(--main-color);
+      background-clip: text;
+      left: 0;
+      top: 0;
+    }
+    .frontend-span {
+        animation: animate-front 6s ease-in-out infinite;
+      }
+      .backend-span {
+        animation: animate-back 6s ease-in-out infinite;
+      }
+      .fullstack-span {
+        animation: animate-full 6s ease-in-out infinite;
+      }
+      
+      .last-span {
+        margin-left: 15rem;
+        color: var(--text-color);
+      }
+      @keyframes animate-front {
+        0% {
+          width: 0;
+        }
+        15.5% {
+          width: 100%;
+        }
+        33% {
+          width: 0;
+        }
+        /* 0% → Yazı görünmez.
+    15.5% → Yazı tamamen görünür olur.
+    33% → Yazı tekrar kaybolur. */
+      }
+      @keyframes animate-back {
+        33% {
+          width: 0;
+        }
+        48.5% {
+          width: 100%;
+        }
+        66% {
+          width: 0;
+        }
+        /* Önceki yazı bittikten sonra başlar.
+    33% → Başlangıçta gizli.
+    48.5% → Görünür hale gelir.
+    66% → Tekrar gizlenir. */
+      }
+      @keyframes animate-full {
+        66% {
+          width: 0;
+        }
+        81.5% {
+          width: 100%;
+        }
+        100% {
+          width: 0;
+        }
+        /* Backend bittikten sonra başlar.
+    66% → Başlangıçta gizli.
+    81.5% → Görünür olur.
+    100% → Kaybolur. */
+      }
+       /* ABOUTH START */
+  .about {
+    display: flex; /* İçeriği yan yana hizalar */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+    gap: 2rem; /* Öğeler arasına 2 rem boşluk bırakır */
+    background: var(--second-bg-color); /* Arka plan rengini belirler */
+  }
+  .about-img img {
+    width: 35vw; /* Resmin genişliğini ekranın %35'i yapar */
+  }
+  
+  .heading {
+    text-align: center; /* Başlığı ortalar */
+    font-size: 4.5rem; /* Yazı boyutunu 4.5 rem yapar */
+  }
+  
+  .about-content h2 {
+    text-align: left; /* Yazıyı sola hizalar */
+    line-height: 1.2; /* Satır aralığını belirler */
+  }
+  .about-content h3 {
+    font-size: 2.6rem; /* Yazı boyutunu 2.6 rem yapar */
+  }
+  
+  .about-content p {
+    position: relative; /* Konumlandırma yaparken üst elemente göre hareket eder */
+    font-size: 1.6rem; /* Yazı boyutu */
+    margin: 2rem 0 3rem; /* Dış boşluk (üst 2rem, sağ-sol 0, alt 3rem) */
+  }
+  
+  .about-btn {
+    display: inline-block; /* Satır içi blok olarak davranır */
+    padding: 1rem 3rem; /* İç boşluk */
+    background: var(--main-color); /* Arka plan rengi */
+    border-radius: 4rem; /* Kenarları yuvarlar */
+    font-size: 1.6rem; /* Yazı boyutu */
+    color: var(--second-bg-color); /* Yazı rengi */
+    letter-spacing: 0.1rem; /* Harfler arası mesafe */
+    font-weight: 600; /* Yazı kalınlığı */
+    transition: 0.5s ease; /* Yumuşak geçiş efekti */
+    filter: drop-shadow(0 0 2rem var(--main-color)); /* Gölgelendirme efekti */
+  }
+  .about-btn:hover {
+    filter: none; /* Gölgeyi kaldırır */
+    color: var(--text-color); /* Yazı rengini değiştirir */
+  }
+  
+  .about-span {
+    color: var(--main-color);
+    position: relative;
+  }
+  /* 
+  color: var(--main-color); → 
+  Yazı rengini ana renk (--main-color) olarak ayarlar.
+  position: relative; →
+   Konumunu relative yaparak, gerektiğinde pozisyonunu değiştirebiliriz. */
+  
+  .about-img img {
+    animation: anim 30s infinite; /* 30 saniyelik döngüsel animasyon */
+    background: var(--main-color); /* Arka plan rengi */
+    filter: drop-shadow(0 0 10rem var(--main-color)); /* Gölge efekti */
+    border: 3px solid var(--text-color); /* Kenarlık */
+    border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%; /* Oval kenar efekti */
+  }
+@keyframes anim{
+    0%,
+    100%{
+        border-radius: 30% 70% 70% 30% / 30% 70%  48% 52%;
+    }
+    10%{
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+    20%{
+        border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+    }
+    30%{
+        border-radius: 39% 61% 47% 53 / 37% 40% 60% 63% ;
+    }
+    40%{
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+    50%{
+        border-radius: 100%
+    }
+    60%{
+        border-radius: 39% 61% 47% 53 / 37% 40% 60% 63% ;
+    }
+    70%{
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+    80%{
+        border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+    }
+    90%{
+        border-radius: 39% 61% 47% 53 / 37% 40% 60% 63% ;
+    }
+}
+
+.about-content p span {
+color: transparent;
+background-clip: text;
+background-image: linear-gradient(
+ to right,
+ var(--text-color),
+ var(--text-color)
+
+);
+background-repeat: no-repeat;
+background-size: 0% 100%;
+animation: animate-text 6s linear forwards;
+animation-timeline: view();
+animation-range: contain;
+animation-range-start: 10vh;
+animation-range-end: 40vh;
+}
+
+@keyframes animate-text {
+to {
+    background-size: 100% 100%;
+}
+}
+/* ABOUTH END */
+
+      
