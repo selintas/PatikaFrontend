@@ -2,6 +2,6 @@
 //alert("uyarı mesajı");
 
 //Prompomt açtım.
-let isim = prompt("Adınızı giriniz: ");
+let isim = toString(prompt("Adınızı giriniz: "));
 
-console.log(isim);
+console.log(typeof isim);
