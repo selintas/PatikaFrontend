@@ -11,3 +11,5 @@
 
 -- coklu promp bilgisi alma if else ile
 ![ifelscoklu](image-4.png)
+
+![ısım](image-5.png)
