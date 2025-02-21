@@ -9,3 +9,4 @@ true-false doner.
 ![confırm2](image-3.png)
 
 tamam(true) veya iptal(false)
+
