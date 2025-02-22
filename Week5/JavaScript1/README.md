@@ -1,3 +1,12 @@
+# Week5 project1
+
+![image](https://github.com/user-attachments/assets/87e78c5e-ae1c-4d80-8c79-afe49b476658)
+
+![image](https://github.com/user-attachments/assets/144741cc-8e1f-40c1-b5ea-710f32571276)
+
+
+## Ref img
+
 ![diolag](image.png)
 
 ![promp](image-1.png)
@@ -13,4 +22,3 @@ tamam(true) veya iptal(false)
 ![isimgirmeV2](image-4.png)
 
 ![ifif](image-5.png)
-
