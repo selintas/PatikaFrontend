@@ -18,5 +18,14 @@ function check(userName, age) {
         console.log("Yaşınızı sayı olarak giriniz!");
     } else {
         console.log("Adınız: " + userName + "\nYaşınız: " + age);
+
+        //! Girilen isim id ile alınarak HTML'de gösterildi.
+        document.getElementById("myName").textContent = userName; // HTML'de id'si myName olan elementin textContent'ini userName'e eşitledik.
+
+        
+
+        //* yaş bilgisi eklemedık daha sonra ekleyecegız.
+
+        // document.getElementById("myAge").textContent = age; // HTML'de id'si myAge olan elementin textContent'ini age'e eşitledik.
     }
 }
