@@ -13,3 +13,4 @@ tamam(true) veya iptal(false)
 ![isimgirmeV2](image-4.png)
 
 ![ifif](image-5.png)
+
