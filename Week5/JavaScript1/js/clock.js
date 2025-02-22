@@ -29,3 +29,17 @@ function check(userName, age) {
         // document.getElementById("myAge").textContent = age; // HTML'de id'si myAge olan elementin textContent'ini age'e eşitledik.
     }
 }
+
+function showTime() {
+  const clockElement = document.getElementById('myClock');
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  
+  setInterval(() => {
+    const now = new Date();
+    const day = days[now.getDay()];
+    const time = now.toLocaleTimeString();
+    clockElement.innerHTML = ` ${time}, ${day}`;
+  }, 1000);
+}
+
+showTime();
