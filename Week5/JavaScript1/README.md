@@ -4,6 +4,19 @@
 
 ![image](https://github.com/user-attachments/assets/144741cc-8e1f-40c1-b5ea-710f32571276)
 
+## Ref DateTimes
+
+--dates
+![dates](image-6.png)
+**months 11 !!!
+-- set 
+![set](image-7.png)
+
+--string 
+![string](image-8.png)
+
+-- tarih atama 
+![atama](image-9.png)
 
 ## Ref img
 

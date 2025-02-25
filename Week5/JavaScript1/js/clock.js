@@ -43,3 +43,38 @@ function showTime() {
 }
 
 showTime();
+
+//Dinamik olarak Element olusturma
+
+const LastDiv = document.querySelectorAll('.text-center')[0];
+
+console.log(LastDiv);
+
+const link = document.createElement('a'); // Changed 'element' to 'link'
+
+link.id = "goBlogWebSite";
+link.className = "btn btn-dark btn-sm mt-3 mb-3";
+link.innerHTML = "Search in Google";  //a etiketi içerisine yazı yazdık.
+
+// buton kutu içerisine al - deneme
+link.style.display = "block";
+link.style.width = "200px";
+link.style.margin = "auto";
+link.style.padding = "10px";
+link.style.textAlign = "center";
+link.style.textDecoration = "none";
+link.style.color = "#fff";
+link.style.backgroundColor = "darkgray";
+//link.style.border = "2px solid #e98208";
+link.style.borderRadius = "5px";
+link.style.fontWeight = "bold";
+link.style.fontSize = "20px";
+link.style.cursor = "pointer";
+
+link.target = "_blank";
+
+link.href = "https://www.google.com";
+
+LastDiv.appendChild(link);
+
+console.log(link);
