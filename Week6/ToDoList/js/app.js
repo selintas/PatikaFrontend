@@ -5,6 +5,10 @@ const addInput = document.querySelector("#task");
 const todoList = document.querySelector("#list");
 
 const addPopup = document.querySelector("#liveToastBtn");
+
+const showPopup = document.querySelector(".header");
+ 
+
   
 runEvents();
 
@@ -14,41 +18,59 @@ function runEvents() {
 }
 
 function addTask(e) {
-  e.preventDefault();
+  e.preventDefault(); // Move this to the beginning
 
   const inputText = addInput.value.trim();
 
   if (inputText == "" || inputText == null) {
     alert("Please add a task");
   } else {
-    //arayuze ekleme yapılacak
+    // arayuze ekleme yapılacak
     addTaskUI(inputText);
   }
+}
 
-  function addTaskUI(newTodo) {
-    const li = document.createElement("li");
+function addTaskUI(newTodo) {
 
-    //li.className ="list-group-item d-flex justify-content-between align-items-center";
+  const li = document.createElement("li");
 
-    li.textContent = newTodo;
+  //li.className ="list-group-item d-flex justify-content-between align-items-center";
 
-    const a = document.createElement("a");
+  li.textContent = newTodo;
 
-    a.href = "#";
-    a.className = "badge badge-danger badge-pill";
-    a.textContent = "X";
-    //a.style.color = "white";
+  const a = document.createElement("a");
 
-    li.appendChild(a);
+  a.href = "#";
+  a.className = "badge badge-danger badge-pill";
+  a.textContent = "X";
+  //a.style.color = "white";
+  //a.style.backgroundColor = "red";
+  //a.style.padding = "5px";
 
-    todoList.appendChild(li);
+  li.appendChild(a);
 
-    addInput.value = "";
+  todoList.appendChild(li);
 
-    //local storage ekleme yapılacak
-    addTaskLocalStorage(newTodo);  
+  addInput.value = "";
 
+  //local storage ekleme yapılacak
+  addTaskLocalStorage(newTodo);  
+
+}
+
+function addTaskLocalStorage(newTodo) {
+  let todos = getTasksFromLocalStorage();
+  todos.push(newTodo);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function getTasksFromLocalStorage() {
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
   }
-   
+  return todos;
 }
 
