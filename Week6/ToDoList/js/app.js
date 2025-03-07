@@ -7,6 +7,11 @@ const todoList = document.querySelector("#list");
 const addPopup = document.querySelector("#liveToastBtn");
 
 const showPopup = document.querySelector(".header");
+
+// bootsrap toast için deneme
+const showToast = document.querySelector("#liveToast");
+
+let todos = [];
  
 
   
@@ -27,6 +32,9 @@ function addTask(e) {
   } else {
     // arayuze ekleme yapılacak
     addTaskUI(inputText);
+
+    // local storage ekleme yapılacak
+    addTaskLocalStorage(inputText);
   }
 }
 
@@ -38,6 +46,7 @@ function addTaskUI(newTodo) {
 
   li.textContent = newTodo;
 
+
   const a = document.createElement("a");
 
   a.href = "#";
@@ -48,13 +57,8 @@ function addTaskUI(newTodo) {
   //a.style.padding = "5px";
 
   li.appendChild(a);
-
   todoList.appendChild(li);
-
   addInput.value = "";
-
-  //local storage ekleme yapılacak
-  addTaskLocalStorage(newTodo);  
 
 }
 
@@ -72,5 +76,18 @@ function getTasksFromLocalStorage() {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
   return todos;
+}
+
+function removeTask(e) {
+  if (e.target.classList.contains("badge-danger")) {
+    e.target.parentElement.remove();
+    removeTaskFromLocalStorage(e.target.parentElement.textContent);
+  }
+}
+
+function removeTaskFromLocalStorage(task) {
+  let todos = getTasksFromLocalStorage();
+  todos = todos.filter(todo => todo !== task.slice(0, -1));
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
 
