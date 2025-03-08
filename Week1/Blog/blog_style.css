@@ -16,7 +16,7 @@ ol:nth-child(odd){
     width: auto;
 }
 body {
-    background-image: url('./img/backround1.png');
+    background-image: url('../img/backround1.png');
     background-size: cover; /* Resmin boyutunu ekranın tamamına yayar */
     background-position: center center; /* Resmin ortalanmasını sağlar */
     background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
