@@ -46,4 +46,6 @@ This is a practice project, but feel free to submit a pull request if you have i
 This project is free to use for educational purposes.
 
 
-![tablo](image.png)
+![tablo](./img/image.png)
+
+![ıcerık](./img/image1.png)
